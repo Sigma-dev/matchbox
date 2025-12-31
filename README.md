@@ -36,6 +36,7 @@ The Matchbox project contains:
 ## Examples
 
 - [simple](examples/simple): A simple communication loop using matchbox_socket
+- [firestore_signalling](examples/firestore_signalling): A wasm-only example that uses a public Firestore database for signalling (no matchbox server).
 - [bevy_ggrs](examples/bevy_ggrs): An example browser game, using `bevy` and `bevy_ggrs`
   - Live 2-player demo: <https://helsing.studio/box_game/>
   - Live 4-player demo: <https://helsing.studio/box_game/?players=4>
