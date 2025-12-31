@@ -89,7 +89,7 @@ async fn async_main(room_id: Option<String>) {
             info!("╔══════════════════════════════════════╗");
             info!("║        CLIENT MODE - JOINING         ║");
             info!("╠══════════════════════════════════════╣");
-            info!("║  Room Code: {:<24}║", code);
+            info!("║  Room Code: {:<4}                     ║", code);
             info!("╚══════════════════════════════════════╝");
             (code, false)
         }
@@ -98,11 +98,11 @@ async fn async_main(room_id: Option<String>) {
             info!("╔══════════════════════════════════════╗");
             info!("║         HOST MODE - LISTENING        ║");
             info!("╠══════════════════════════════════════╣");
-            info!("║  Room Code: {:<24}║", code);
+            info!("║  Room Code: {:<4}                     ║", code);
             info!("║                                      ║");
             info!("║  Share this code with clients!       ║");
             info!("║  Clients join with:                  ║");
-            info!("║  cargo run -- {}                    ║", code);
+            info!("║  cargo run -- {:<4}                   ║", code);
             info!("╚══════════════════════════════════════╝");
             (code, true)
         }
