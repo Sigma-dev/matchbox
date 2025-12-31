@@ -7,7 +7,9 @@ use tracing::info;
 const CHANNEL_ID: usize = 0;
 const LOG_FILTER: &str = "info,firestore_signalling=debug,matchbox_socket=debug";
 
+mod firestore_api;
 mod firestore_signaller;
+mod http_client;
 
 #[cfg(target_arch = "wasm32")]
 mod browser_url;
